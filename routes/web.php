@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/playstation/get-sessions', [App\Http\Controllers\Playstation\PlaystationGetSessionsController::class, 'index'])->name('playstation.sessions');
