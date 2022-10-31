@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/playstation/get-sessions', [App\Http\Controllers\Playstation\PlaystationGetSessionsController::class, 'index'])->name('playstation.sessions');
+
+Route::get('/games', [App\Http\Controllers\GamesController::class, 'index'])->name('games.index');
