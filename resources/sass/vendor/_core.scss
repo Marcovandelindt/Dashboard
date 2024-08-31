@@ -1,0 +1,40 @@
+.application-wrapper {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: $black;
+    font-family: $body-font;
+
+    .sidebar {
+        width: 250px;
+        flex: 1 0 250px;
+		max-width: 250px;
+    }
+
+    .content-wrapper {
+        background-color: $lightgrey;
+        width: calc(100% - 270px);
+        flex: 1 0 calc(100% - 270px);
+        max-width: calc(100% - 270px);
+        margin: 20px 20px 20px 0;
+        border-radius: 20px;
+
+        .content-inner {
+            .content-heading {
+				padding: 30px;
+                border-top-left-radius: 20px;
+                background-color: $full-white;
+                border-bottom: 1px solid $grey;
+
+                 p {
+                     color: $darkgrey;
+                     font-size: 20px;
+                 }
+            }
+
+            .content-wrapper {
+                padding: 30px;
+            }
+        }
+    }
+}

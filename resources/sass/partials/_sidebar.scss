@@ -1,0 +1,38 @@
+.sidebar {
+	height: 100vh;
+    background-color: $black;
+
+    .sidebar-wrapper {
+        padding: 0 30px;
+        margin-top: 55px;
+
+        ul {
+            padding-left: 0;
+			list-style-type: none;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+
+                a {
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: .5px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $grey;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
